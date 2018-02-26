@@ -67,46 +67,8 @@ For Python 3.*
 
 	sudo yum install -y python34-devel
 
-## Examples
-
-Check out [examples/simple.py][simple] for a short intro. A sample output is:
-
-![Constitution](examples/constitution.png)
-
-Or run [examples/masked.py][masked] to see more options. A sample output is:
-
-![Alice in Wonderland](examples/alice.png)
-
-Getting fancy with some colors:
-![Parrot with rainbow colors](examples/parrot.png)
-
-
-## Command-line usage
-
-The `wordcloud_cli.py` tool can be used to generate word clouds directly from the command-line:
-
-	$ wordcloud_cli.py --text mytext.txt --imagefile wordcloud.png
-
-If you're dealing with PDF files, then `pdftotext`, included by default with many Linux distribution, comes in handy:
-
-	$ pdftotext mydocument.pdf - | wordcloud_cli.py --imagefile wordcloud.png
-
-In the previous example, the `-` argument orders `pdftotext` to write the resulting text to stdout, which is then piped to the stdin of `wordcloud_cli.py`.
-
-Use `wordcloud_cli.py --help` so see all available options.
-
-[blog-post]: http://peekaboo-vision.blogspot.de/2012/11/a-wordcloud-in-python.html
-[website]: http://amueller.github.io/word_cloud/
-[simple]: examples/simple.py
-[masked]: examples/masked.py
-[reddit-cloud]: https://github.com/amueller/reddit-cloud
-[wc2]: http://www.reddit.com/user/WordCloudBot2
-[wc2top]: http://www.reddit.com/user/WordCloudBot2/?sort=top
-[chat-stats]: https://github.com/popcorncolonel/Chat_stats
-[twitter-word-cloud-bot]: https://github.com/defacto133/twitter-wordcloud-bot
-[twitter-wordnuvola]: https://twitter.com/wordnuvola
-[imgur-wordnuvola]: http://defacto133.imgur.com/all/
-[intprob]: http://peekaboo-vision.blogspot.de/2012/11/a-wordcloud-in-python.html#bc_0_28B
+## IT_skills
+To create your own word cloud run [WordBlob.py](https://github.com/SylwiaOliwia2/word_cloud/blob/master/IT_skills/WordBlob.py) file. If you'd like to play with preprocessing of job offers, run [extract_skills.py](https://github.com/SylwiaOliwia2/word_cloud/blob/master/IT_skills/extract_skills.py). The original lists of skills and job offers are saved in [Scrappers](https://github.com/SylwiaOliwia2/word_cloud/tree/master/IT_skills/Scrappers) folder.
 
 
 ## Licensing
